@@ -1,20 +1,49 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+  <img src="https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2000&auto=format&fit=crop" alt="Banner Moustique Tigre" width="100%">
+
+  <h1>Moustique Tigre</h1>
+  <p><em>Modèle Bayésien Hiérarchique pour la prédiction spatio-temporelle</em></p>
+
+  <!-- Badges -->
+  <a href="#"><img src="https://img.shields.io/badge/Status-Active-success?style=flat-square" alt="Status"></a>
+  <a href="#"><img src="https://img.shields.io/badge/UI-Minimalist-black?style=flat-square" alt="UI Style"></a>
+  <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License"></a>
 </div>
 
-# Run and deploy your AI Studio app
+<br/>
 
-This contains everything you need to run your app locally.
+## 📖 Le Contexte (Bối cảnh)
 
-View your app in AI Studio: https://ai.studio/apps/11744994-fc70-4873-96f0-4664314be0d1
+Dự án này là một bài báo tương tác (interactive data journalism) kết hợp giữa thiết kế web phong cách Lookbook và khoa học dữ liệu. Mục tiêu là trực quan hóa sự phân bổ và lây lan của loài muỗi vằn (*Aedes albopictus*) thông qua một **Mô hình Bayes phân cấp**.
 
-## Run Locally
+Giao diện được thiết kế tối giản, ưu tiên Typography và không gian trắng (whitespace), nhằm làm nổi bật các phương trình toán học và biểu đồ dữ liệu phức tạp.
 
-**Prerequisites:**  Node.js
+---
 
+## 📐 L'Architecture du Modèle (Kiến trúc mô hình)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Dự án áp dụng nền tảng của định lý Bayes để ước lượng các tham số phân bố:
+
+$$ P(\theta | y) = \frac{P(y | \theta) P(\theta)}{P(y)} $$
+
+Mô hình phân cấp cho phép tính toán sự thay đổi không gian và thời gian với độ chính xác cao, xử lý hiệu quả các điểm dữ liệu nhiễu trong theo dõi dịch tễ.
+
+---
+
+## 🛠 Tech Stack (Công nghệ sử dụng)
+
+* **Cấu trúc & Giao diện:** HTML5 Semantic, Vanilla CSS (Flexbox/Grid).
+* **Tương tác:** Vanilla JavaScript (Intersection Observer API cho hiệu ứng Fade-in).
+* **Toán học & Dữ liệu:** 
+  * `MathJax` / `KaTeX` để render công thức chuẩn xác.
+  * `Chart.js` / `D3.js` cho phần trực quan hóa dữ liệu (Data Visualization).
+
+---
+
+## 🚀 Installation & Usage (Cài đặt & Sử dụng)
+
+Dự án này là một trang web tĩnh hoàn toàn, không yêu cầu cài đặt Node.js hay server backend phức tạp.
+
+1. **Clone repository này về máy:**
+```bash
+   git clone [https://github.com/your-username/moustique-tigre.git](https://github.com/your-username/moustique-tigre.git)
