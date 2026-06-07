@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Roboto Mono", SFMono-Regular, monospace;
+  
+  --color-brand-red: #A63A2B;
+  --color-brand-red-dark: #8B261D;
+  --color-brand-red-light: #FDF3F2;
+  --color-brand-dark: #121212;
+  --color-brand-gray: #666666;
+  --color-brand-bg-off: #FAF9F6;
+  --color-brand-border: #E5E5E5;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #121212;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom aesthetic selection color */
+::selection {
+  background-color: #FDF3F2; /* brand-red-light */
+  color: #A63A2B;            /* brand-red */
+}
+
+/* Minimalist elegant borders and highlights */
+.border-thin {
+  border: 1px solid var(--color-brand-border);
+}
+
+.bg-offwhite {
+  background-color: var(--color-brand-bg-off);
+}
+
+/* Scrollbar styling for consistent magazine layout */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D1D1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A63A2B;
+}
