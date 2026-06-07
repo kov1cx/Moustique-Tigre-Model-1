@@ -4,8 +4,9 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
+  const isGithubActions = process.env.GITHUB_ACTIONS === 'true';
   return {
-    base: './', // Ensures relative assets path for GitHub Pages deployment
+    base: isGithubActions ? '/Moustique-Tigre-Model-1/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
