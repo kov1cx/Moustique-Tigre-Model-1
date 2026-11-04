@@ -1,5 +1,3 @@
-<div align="center">
-  <img src="https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2000&auto=format&fit=crop" alt="Banner Moustique Tigre" width="100%">
 
   <h1>Moustique Tigre</h1>
   <p><em>Modèle Bayésien Hiérarchique pour la prédiction spatio-temporelle</em></p>
